@@ -1,0 +1,104 @@
+/* style.css - Giao diện cho trang Quán Trà Sữa */
+
+/* 1. Áp dụng cho mọi phần tử trên trang */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Cấu trúc chung của toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a55198; /* nền hồng nhạt */
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* 3. Tiêu đề lớn */
+h1 {
+    color: #d6336c; /* màu hồng đậm */
+    margin-bottom: 10px;
+}
+
+/* 4. Tiêu đề phụ (Menu) */
+h2 {
+    color: #d6336c;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* 5. Danh sách menu */
+ul {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* 6. Mỗi món trong menu */
+li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 7. Giá tiền (phần bên phải của mỗi món) */
+.gia {
+    font-weight: bold;
+    color: #d6336c;
+}
+
+/* 8. Nút Đặt hàng */
+button {
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #b02a5a;
+}
+
+/* 9. Responsive: trên màn hình nhỏ (điện thoại) */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    li {
+        padding: 12px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .gia {
+        align-self: flex-end;
+    }
+}

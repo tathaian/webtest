@@ -10,8 +10,8 @@
 /* 2. Cấu trúc chung của toàn trang */
 body {
     font-family: Arial, sans-serif;
-    background-color: #a55198; /* nền hồng nhạt */
-    color: #4a4a4a;
+    background-color: #78b8ec; /* nền hồng nhạt */
+    color: #569ade;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,13 +21,13 @@ body {
 
 /* 3. Tiêu đề lớn */
 h1 {
-    color: #d6336c; /* màu hồng đậm */
+    color: #568dda; /* màu hồng đậm */
     margin-bottom: 10px;
 }
 
 /* 4. Tiêu đề phụ (Menu) */
 h2 {
-    color: #d6336c;
+    color: #047bde;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -49,13 +49,13 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(82, 174, 204, 0.05);
     transition: transform 0.2s;
 }
 
 li:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(112, 149, 229, 0.1);
 }
 
 /* 7. Giá tiền (phần bên phải của mỗi món) */
